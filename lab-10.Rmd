@@ -15,13 +15,99 @@ library(openintro)
 
 ### Exercise 1
 
-Remove this text, and add your answer for Exercise 1 here.
-Add code chunks as needed.
-Don't forget to label your code chunk.
-Do not use spaces in code chunk labels.
+```{r}
+m_bty <- lm(score ~ bty_avg, data=evals)
+summary(m_bty)
+```
+y = 0.6664x + 3.88
+
+R-squared:  0.03502
+Adjusted R-squared:  0.03293
 
 ### Exercise 2
+```{r}
+m_bty_gen <- lm(score ~ bty_avg + gender, data=evals)
+```
 
-...
+```{r}
+summary(m_bty_gen)
+```
+y = 0.07416x + 0.17239z + 3.75
 
-Add exercise headings as needed.
+R-squared: 0.05912
+Adjusted R-squared: 0.05503
+
+### Exercise 3
+
+Intercept = 3.7434, that would be the score if the beauty was 0 and the gender was female
+.07416 is how much the score would go up for every 1 increase of beauty
+.17239 is the amount that male professors score higher than females on average
+
+### Exercise 4
+
+The variability is 5.5503%
+
+
+### Exercise 5
+
+y= .07416x + (.17239 + 3.74734)
+
+
+### Exercise 6
+
+Males
+
+### Exercise 7
+
+Males will generally have higher scores
+
+
+### Exercise 8
+
+The adjusted r-squared for the equation with gender explains more variance than without. In particular, adding it increases the variance explained % by 22%.
+
+### Exercise 9
+
+Yeah, it raised by about .01
+
+### Exercise 10
+
+
+
+### Exercise 11
+
+
+
+
+### Exercise 12
+
+
+
+
+### Exercise 13
+
+
+
+### Exercise 14
+
+
+
+### Exercise 15
+
+
+
+### Exercise 16
+
+
+
+### Exercise 17
+
+
+
+
+### Exercise 18
+
+
+
+
+
